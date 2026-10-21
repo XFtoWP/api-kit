@@ -36,10 +36,10 @@ class Users extends XFCP_Users
 		if ( $userGroupId )
 			$finder->where('user_group_id', $userGroupId);
 		
-		# RLIKE can return charset errors, may not be compatible with all installations
+		# a user must be in every listed secondary group; LIKE matches are used because RLIKE can raise charset errors on some installs
 		foreach ( $secondaryGroupIds as $secondaryGroupId )
 			$finder->whereOr([
-				['secondary_group_ids', $secondaryGroupId],
+				['secondary_group_ids', (string) $secondaryGroupId],
 				['secondary_group_ids', 'like', "$secondaryGroupId,%"],
 				['secondary_group_ids', 'like', "%,$secondaryGroupId,%"],
 				['secondary_group_ids', 'like', "%,$secondaryGroupId"]

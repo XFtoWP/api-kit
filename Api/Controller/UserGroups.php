@@ -3,7 +3,6 @@
 namespace Kolakube\APIKit\Api\Controller;
 
 use XF\Api\Controller\AbstractController;
-use XF\Mvc\ParameterBag;
 
 class UserGroups extends AbstractController
 {

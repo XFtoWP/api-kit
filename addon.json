@@ -1,14 +1,23 @@
 {
     "legacy_addon_id": "",
-    "title": "REST API extensions",
-    "description": "Adds additional endpoints and forum data to your website's REST API.",
-    "version_id": 1010170,
-    "version_string": "1.2",
-    "dev": "",
-    "dev_url": "",
+    "title": "API Kit",
+    "description": "Adds thread prefix and user group endpoints, user group filters and extra thread sorts to the XenForo REST API.",
+    "version_id": 1020170,
+    "version_string": "1.2.1",
+    "dev": "Kolakube",
+    "dev_url": "https://kolakube.com",
     "faq_url": "",
-    "support_url": "",
+    "support_url": "https://github.com/XFtoWP/api-kit",
     "extra_urls": [],
-    "require": [],
-    "icon": ""
+    "require": {
+        "XF": [
+            2020000,
+            "XenForo 2.2.0+"
+        ],
+        "php": [
+            "7.2.0",
+            "PHP 7.2.0+"
+        ]
+    },
+    "icon": "fa-plug"
 }

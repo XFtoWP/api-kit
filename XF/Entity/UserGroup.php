@@ -2,9 +2,6 @@
 
 namespace Kolakube\APIKit\XF\Entity;
 
-use XF\Mvc\Entity\Entity;
-use XF\Mvc\Entity\Structure;
-
 class UserGroup extends XFCP_UserGroup
 {
 	protected function setupApiResultData(

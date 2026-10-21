@@ -2,9 +2,6 @@
 
 namespace Kolakube\APIKit\XF\Entity;
 
-use XF\Mvc\Entity\Entity;
-use XF\Mvc\Entity\Structure;
-
 class ThreadPrefix extends XFCP_ThreadPrefix
 {
 	protected function setupApiResultData(
