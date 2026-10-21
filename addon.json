@@ -1,0 +1,14 @@
+{
+    "legacy_addon_id": "",
+    "title": "REST API extensions",
+    "description": "Adds additional endpoints and forum data to your website's REST API.",
+    "version_id": 1010170,
+    "version_string": "1.2",
+    "dev": "",
+    "dev_url": "",
+    "faq_url": "",
+    "support_url": "",
+    "extra_urls": [],
+    "require": [],
+    "icon": ""
+}
