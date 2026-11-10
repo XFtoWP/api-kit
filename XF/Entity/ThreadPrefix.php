@@ -16,5 +16,10 @@ class ThreadPrefix extends XFCP_ThreadPrefix
 			$result->color_label = $match[1];
 		
 		$result->title = \XF::phrase('thread_prefix.'.$this->prefix_id, [], false)->render();
+
+		$colors = \Kolakube\APIKit\PrefixColors::forClass($this->css_class);
+
+		if ($colors)
+			$result->colors = $colors;
 	}
 }

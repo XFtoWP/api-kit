@@ -12,6 +12,6 @@ class ThreadPrefixes extends AbstractController
 		
 		$threadPrefixes = $this->finder('XF:ThreadPrefix')->fetch();
 		
-		return $this->apiResult($threadPrefixes->toApiResults());
+		return $this->apiResult(['prefixes' => $threadPrefixes->toApiResults()]);
 	}
 }
