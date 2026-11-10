@@ -25,7 +25,7 @@ The users filters use XenForo's own `user:read` scope and permissions: the membe
 
 API Kit reads each prefix's colors from the default style's compiled `core_labels.less` and `extra.less`, so edited label styles, dark styles and custom CSS classes come through as visitors see them. A rule counts when its selector is made only of the prefix's own classes; hover states, `@media` blocks and nested selectors are left out, and specificity and `!important` decide between rules as in a browser. Only plain color values are sent. A value such as `var(--x)` is left out, and a prefix with no plain colors has no `colors` field.
 
-The colors are built by a background job when the default style or a prefix's CSS class changes, and kept in the add-on's simple cache. API requests only read them. Until the first build finishes, prefixes have no `colors` field.
+The colors are built by a background job when API Kit is installed or upgraded, and again when the default style or a prefix's CSS class changes. They're kept in the add-on's simple cache, and API requests only read them. Until the first build finishes, prefixes have no `colors` field.
 
 ## Developers
 
